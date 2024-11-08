@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/droppingbombs.unity
+    guid: aa67ef6fc07cddb43927325a3841a8f1
   m_configObjects: {}
