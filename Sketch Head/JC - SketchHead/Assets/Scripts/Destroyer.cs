@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject.Find("DoodleHead").SetActive(false);
+        GameController.GameOver();
+    }
     void Start()
     {
         
