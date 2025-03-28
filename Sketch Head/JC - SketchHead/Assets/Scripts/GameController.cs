@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
     [Header("Game Over UI Canvas Object")]
     public GameObject gameOverCanvas;
 
+    public GameObject fakePlatform;
     void Start()
     {
         if (!instance) 
@@ -34,6 +35,7 @@ public class GameController : MonoBehaviour {
         float xPosition = Random.Range(-3f, 3f);
         Instantiate(instance.platform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
         instance.yPos += 2.5f;
+        Instantiate(instance.fakePlatform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
     }
 
     public static void GameOver()
