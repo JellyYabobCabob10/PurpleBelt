@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("Default Speed")]
+    public float speed = 6;
+
     void Start()
     {
 
@@ -13,6 +15,7 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Add vector3.left (-1,0,0) to our transform, times by speed
+        transform.position += Vector3.left * speed * Time.deltaTime;
     }
 }
